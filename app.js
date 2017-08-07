@@ -16,5 +16,7 @@ server.listen(3000, function () {
 });
 
 var IO = socketIO(server).listen(server);
+
 manageSockets.initBoss(IO);
+
 manageSockets.initUser(IO);
